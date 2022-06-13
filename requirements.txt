@@ -1,0 +1,11 @@
+numpy
+flask
+click==7.1.2
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+pandas
+tensorflow
+keras
+werkzeug
