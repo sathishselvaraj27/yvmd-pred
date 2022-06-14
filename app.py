@@ -22,13 +22,15 @@ from gevent.pywsgi import WSGIServer
 # Define a flask app
 app = Flask(__name__)
 
+path = "https://drive.google.com/file/d/1er_d9jY6kVu9tLv6Nxxl_A2zED0dJ4kU/view?usp=sharing"
+
 # Model saved with Keras model.save()
-MODEL_PATH = r"Best_Model_IceptionV3.h5"
+MODEL_PATH = "Best_Model_IceptionV3.h5"
 
 
 # Load your trained model
 
-model = load_model(MODEL_PATH)
+model = load_model("Deployment-of-YVMD-model/Best_Model_IceptionV3.h5")
 
 # model._make_predict_function()          # Necessary
 # print('Model loaded. Start serving...')
